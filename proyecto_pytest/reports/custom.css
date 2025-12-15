@@ -1,70 +1,111 @@
+/* Tipografía y fondo general */
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background-color: #f9fafb;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #f4f6f8;
   color: #1f2937;
   margin: 20px;
 }
 
+/* Título principal */
 h1 {
-  color: #1e3a8a;
+  font-size: 28px;
+  color: #0f172a;
   border-bottom: 2px solid #3b82f6;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
 
+/* Panel resumen */
+.summary {
+  background-color: #e0f2fe;
+  border: 1px solid #60a5fa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Tabla de resultados */
 table {
-  border-collapse: collapse;
   width: 100%;
+  border-collapse: collapse;
   margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 th, td {
-  border: 1px solid #e5e7eb;
-  padding: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
   text-align: left;
 }
 
 th {
-  background-color: #1e40af;
+  background-color: #1e3a8a;
   color: white;
+  font-weight: 600;
 }
 
 tr:nth-child(even) {
-  background-color: #f3f4f6;
+  background-color: #f9fafb;
 }
 
 tr:hover {
   background-color: #e0f2fe;
 }
 
-.summary {
-  background-color: #eff6ff;
-  border: 1px solid #bfdbfe;
-  padding: 15px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+/* Badges de estado */
+.passed {
+  background-color: #dcfce7;
+  color: #166534;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 .failed {
   background-color: #fee2e2;
   color: #991b1b;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-
-.passed {
-  background-color: #dcfce7;
-  color: #166534;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
 }
 
 .skipped {
   background-color: #fef3c7;
   color: #92400e;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Botones de control */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.summary_reload_button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.summary_reload_button:hover {
+  background-color: #1e40af;
 }
