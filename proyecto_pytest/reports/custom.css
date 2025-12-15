@@ -1,0 +1,96 @@
+/* Tipografía y colores base */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #222;
+}
+
+/* Encabezado del reporte */
+h1 {
+  color: #1f2937;
+  border-bottom: 2px solid #3b82f6;
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+/* Contenedor de controles (filtros, colapso, recarga) */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.summary_reload_button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.summary_reload_button:hover {
+  background-color: #1e40af;
+}
+
+/* Tabla de resultados */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 16px;
+}
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #111827;
+  color: #ffffff;
+}
+tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+tr:hover {
+  background-color: #e0f2fe;
+}
+
+/* Panel resumen */
+.summary {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 14px 0;
+}
+
+/* Badges de estado */
+.failed {
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-weight: 600;
+}
+.passed {
+  background-color: #dcfce7;
+  color: #166534;
+  font-weight: 600;
+}
+.skipped {
+  background-color: #fef3c7;
+  color: #92400e;
+  font-weight: 600;
+}
+
+/* Espaciadores y layout */
+.summary_spacer {
+  flex: 0 0 550px;
+}
+.filters,
+.collapse {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
